@@ -1,0 +1,131 @@
+/* Weather App Style */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.weatherBody {
+  background-color: lightpink;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  height: 60vh;
+  width: 20vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.addBackImgCloud {
+  background-image: url("https://i.pinimg.com/564x/76/1f/22/761f22da967029d94b6f58b2084294db.jpg");
+  background-repeat: no-repeat;
+}
+
+.addBackImgThunderStorm {
+  background-image: url("https://i.pinimg.com/564x/82/75/55/8275556098d35e38082658b9f0639102.jpg");
+  background-repeat: no-repeat;
+}
+
+.addBackImgRain {
+  background-image: url("https://i.pinimg.com/236x/ac/7b/c8/ac7bc81554729c887801dd75936a0395.jpg");
+  background-repeat: no-repeat;
+}
+
+.addBackImgHaze {
+  background-image: url("https://i.pinimg.com/236x/c3/cd/b2/c3cdb2a6b123387af9782690b90d728e.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.addBackImgDrizzle {
+  background-image: url("https://i.pinimg.com/236x/1b/c0/5a/1bc05a9b5e09e8e7af6e14affbc071c1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.addBackImgMist {
+  background-image: url("https://i.pinimg.com/236x/1b/c0/5a/1bc05a9b5e09e8e7af6e14affbc071c1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.addBackImgSunShine {
+  background-image: url("https://i.pinimg.com/564x/54/56/a5/5456a5fe1b057e770e86ea543e667ddd.jpg");
+  background-repeat: no-repeat;
+}
+.searchBarDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+.searchImg {
+  height: 20px;
+  padding: 5px;
+}
+
+.searchBarInput {
+  width: 30vw;
+}
+
+.tempCityDiv {
+  position: relative;
+  top: 20%;
+  background: bisque;
+  width: 10vw;
+  height: 10vh;
+  text-align: center;
+  margin-left: 86px;
+  border-radius: 28px;
+  border: 5px solid black;
+}
+
+.tempCityDiv h3 {
+  margin-top: 12px;
+}
+
+.humIcon {
+  height: 10vh;
+  width: 5vw;
+  border-radius: 50%;
+}
+
+.weatherHum {
+  background-color: peachpuff;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.humSpeedDiv {
+  position: relative;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .weatherBody{
+        padding: 100px;
+    }
+    
+  .tempCityDiv {
+    top: 5%;
+    height: 10vh;
+    width: 20vw;
+    margin-left: 0;
+  }
+  .humSpeedDiv{
+    flex-direction: column;
+    top:10%;
+    padding: 0;
+  }
+  .humIcon{
+    height: 5vh;
+    width: 10vw;
+  }
+  .weatherHum{
+    width: 14vw;
+    margin-left: 0;
+  }
+}
